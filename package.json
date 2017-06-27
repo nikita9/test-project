@@ -1,4 +1,8 @@
 {
+  "name": "jasmine-allure-reporter",
+  "version": "1.0.0"
+},
+{
   "name": "mproject",
   "version": "1.0.0",
   "scripts": {
