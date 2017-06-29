@@ -10,7 +10,7 @@ let conf: Config = {
     '../specs/**/*.spec.js',
     '../specs/*.spec.js'
   ],
-  baseUrl: 'http://www.google.com/',
+  baseUrl: 'http://www.protractortest.org/testapp/ng1/',
 
   onPrepare: () => {
     // Adding nice console output. 
