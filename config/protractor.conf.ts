@@ -10,9 +10,13 @@ let conf: Config = {
     '../specs/**/*.spec.js',
     '../specs/*.spec.js'
   ],
-  baseUrl: 'http://www.google.com/',
+  baseUrl: 'http://www.protractortest.org/testapp/ng1/',
 
   onPrepare: () => {
+    var AllureReporter = require('jasmine-allure-reporter');
+    jasmine.getEnv().addReporter(new AllureReporter({
+      resultsDir: 'allure-results'
+    }));
     // Adding nice console output. 
     // Provided by: https://github.com/razvanz/jasmine2-reporter
     let ConsoleReporter = require('jasmine2-reporter').Jasmine2Reporter
